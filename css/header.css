@@ -1,0 +1,214 @@
+.header{
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-bottom: solid 1px rgb(243, 236, 236);
+    z-index: 100;
+   
+}
+
+.left-section{ 
+   
+    display: flex;
+    align-items: center;
+    
+}
+
+.hamburger-menu{
+    height: 24px;
+    margin-left: 20px;
+    margin-right: 24px;
+}
+
+.youtube-logo{
+    height: 50px;
+}
+
+.middle-section{  
+   
+    margin-left:70px ;
+    margin-right: 35px ;
+    max-width: 600px ;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.search-bar{
+    flex: 1;
+    height:34px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: solid 1px rgb(202, 197, 197);
+    border-radius: 2px;
+    width: 0;   /* making default width of search bar to 0 */
+}
+
+.search-bar::placeholder{
+   
+    font-size: 15px;
+   
+}
+
+.search-button{
+    height: 40px;
+    width: 60px;
+    border: solid 1px rgb(202, 197, 197);
+    margin-left: -1px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.search-button .tooltip{
+    position: absolute;
+    background-color:grey;
+    color: white;
+    padding: 10px 8px;
+
+    font-size: 12px;
+    border-radius: 2px;
+    bottom: -50px;
+    opacity: 0; 
+    transition: 0.15s;
+    pointer-events: none; /*  it only allow to show tooltip when hover oover the actual icon and not on the div or surrounded area */
+    
+}
+.search-button:hover .tooltip{
+    opacity: 1;
+    
+}
+
+.search-icon{
+    height: 20px;
+ 
+}
+
+.voice-search-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    margin: 0 10px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.voice-search-button .tooltip{
+    position: absolute;
+    background-color:grey;
+    color: white;
+    
+   
+    padding: 10px 4px;
+    font-size: 12px;
+    border-radius: 2px;
+    bottom: -50px;
+    left: -50px;
+    opacity: 0;
+    transition: 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+
+}
+
+.voice-search-button:hover .tooltip{
+    opacity: 1;
+}
+
+
+.voice-search-icon{
+   height: 22px;  
+    
+}
+
+
+ 
+.right-section{ 
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0; 
+    /* if we reduce broswer size it doesn't shrink and keeps its position  */
+   
+   
+
+}
+.upload-icon-container{
+    position: relative;
+    cursor: pointer;
+}
+.upload-icon-container .tooltip{
+    position: absolute;
+    background-color:grey;
+    color: white;
+    
+    
+    padding: 10px 8px;
+   
+    font-size: 12px;
+    border-radius: 2px;
+    bottom: -50px;
+    left: -10px;
+    opacity: 0;    
+    transition: 0.15s;
+    pointer-events: none;
+}
+.upload-icon-container:hover .tooltip{
+    opacity: 1;
+}
+
+.upload-icon{
+    height: 24px;
+    
+}
+
+.notification-icon{
+    height: 24px;
+}
+.current-user-picture{
+    height:32px;
+}
+
+.notification-icon-contianer{
+    position: relative;
+}
+
+.notification-icon-contianer .tooltip{
+    position: absolute;
+    background-color:grey;
+    color: white;
+    
+    
+    padding: 10px 8px;
+    font-size: 12px;
+    border-radius: 2px;
+    bottom: -50px;
+    left: -25px;
+    opacity: 0;
+    transition: 0.15s;
+    pointer-events: none;
+}
+
+.notification-icon-contianer:hover .tooltip{
+    opacity: 1;
+}
+
+.notification-count{
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    background-color: rgb(209, 57, 57);
+    color: white;
+    font-size: 11px;
+    padding: 3px 5px;
+    border-radius: 20px;
+}
+
